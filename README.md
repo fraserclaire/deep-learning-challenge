@@ -23,7 +23,7 @@ Our goal is to create a deep learning model by identifying key features of the d
 
 ## Model Performance:
 
-**1. Exclude EIN, NAME; Reduced categories for APPLICATION_TYPE and CLASSIFICATION **
+**1. Exclude EIN, NAME; Reduced categories for APPLICATION_TYPE and CLASSIFICATION**
 
 ```
 Checkpoint file: "AlphabetSoupCharity.h5"
@@ -48,7 +48,7 @@ _________________________________________________________________
     - accuracy: 0.7235
 ```
 
-**2. Reduce number of units for Model 1 **
+**2. Reduce number of units for Model 1**
 
 ```
 Checkpoint file: "AlphabetSoupCharity_Optimization.h5"
