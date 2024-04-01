@@ -7,7 +7,7 @@ Our goal is to create a deep learning model by identifying key features of the d
 ### Data Preprocessing:
 
 - Target: 
-    -**IS_SUCCESSFUL**: Was the money used effectively
+    - **IS_SUCCESSFUL**: Was the money used effectively
 
 - Features: 
     - **EIN, NAME**: Identification columns
