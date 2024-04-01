@@ -20,6 +20,8 @@ Our goal is to create a deep learning model by identifying key features of the d
     - **SPECIAL_CONSIDERATIONS**
     - **ASK_AMT**
 
+- Considerations:
+    - Identification columns (EIN, NAME) are likely unique and therefore should be removed from input data. The NAME information are considered in models 4 and 5 below, as particular groups may be associated with successful outcomes (or not) and is worth assessing its potential contribution to predictive power.
 
 ## Model Performance:
 
