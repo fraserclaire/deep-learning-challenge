@@ -23,7 +23,7 @@ Our goal is to create a deep learning model by identifying key features of the d
 
 ## Model Performance:
 
-1. Exclude EIN, NAME; Reduced categories for APPLICATION_TYPE and CLASSIFICATION 
+**1. Exclude EIN, NAME; Reduced categories for APPLICATION_TYPE and CLASSIFICATION **
 
 ```
 Checkpoint file: "AlphabetSoupCharity.h5"
@@ -48,8 +48,9 @@ _________________________________________________________________
     - accuracy: 0.7235
 ```
 
-2. Reduce number of units for Model 1 
+**2. Reduce number of units for Model 1 **
 
+```
 Checkpoint file: "AlphabetSoupCharity_Optimization.h5"
 
 Model: "sequential_1"
@@ -70,11 +71,14 @@ _________________________________________________________________
 - Performance over 100 Epochs:
     - loss: 0.5545 
     - accuracy: 0.7236
+```
 
 The reduction of units from 80 -> 40 and 30 -> 10 for the first and second layers, respectively results in a slight improvement in model performance. The increase in accuracy and reduction of loss is very minimal here.
 
-3. Model 1 with third hidden layer
 
+**3. Model 1 with third hidden layer**
+
+```
 Model: "sequential_2"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -95,12 +99,14 @@ _________________________________________________________________
 - Performance over 100 Epochs:
     - loss: 0.5518 
     - accuracy: 0.7271
+```
 
 The addition of a third layer also slightly improves model performance.
 
 
-4. Exclude EIN; Reduced categories for APPLICATION_TYPE, CLASSIFICATION, and NAME
+**4. Exclude EIN; Reduced categories for APPLICATION_TYPE, CLASSIFICATION, and NAME**
 
+```
 Model: "sequential_3"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -121,11 +127,13 @@ _________________________________________________________________
 - Performance over 100 Epochs:
     - loss: 0.4593 
     - accuracy: 0.7883
+```
 
 Including NAME (with reduced number of categories to group names with <5 requests) improves model performance by increasing accuracy by ~6% and reducing loss by ~10%.
 
-5. Model 4 excluding AFFILIATION column
+**5. Model 4 excluding AFFILIATION column**
 
+```
 Model: "sequential_4"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -146,6 +154,7 @@ _________________________________________________________________
 - Performance over 100 Epochs:
     - loss: 0.4532 
     - accuracy: 0.7887
+```
 
 The model performs slightly better after excluding the AFFILIATION column, which likely implies that these data do not inform whether a loan was successful after funding or not.
 
