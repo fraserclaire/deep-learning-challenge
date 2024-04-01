@@ -25,10 +25,10 @@ Our goal is to create a deep learning model by identifying key features of the d
 
 1. Exclude EIN, NAME; Reduced categories for APPLICATION_TYPE and CLASSIFICATION 
 
+```
 Checkpoint file: "AlphabetSoupCharity.h5"
 
 Model: "sequential"
-
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -42,11 +42,11 @@ _________________________________________________________________
 Total params: 5981 (23.36 KB)
 Trainable params: 5981 (23.36 KB)
 Non-trainable params: 0 (0.00 Byte)
-
 _________________________________________________________________
 - Performance over 100 Epochs:
     - loss: 0.5580 
     - accuracy: 0.7235
+```
 
 2. Reduce number of units for Model 1 
 
