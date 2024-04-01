@@ -26,9 +26,10 @@ Our goal is to create a deep learning model by identifying key features of the d
 ### Compiling, Training, and Evaluating the Model:
 
 **See "Model Performance" for model summaries**
-- RELU activation functions used for the hidden layers and SIGMOID for the output layer.
-- The initial goal was to use 2-3x the number of input nodes for the first layer, then reduce the number of nodes for subsequent layers.
-    - Minor improvement in model performance after reducing the number of nodes in hidden layers, and after adding a third hidden layer.
+- RELU activation functions used for the hidden layers and SIGMOID for the output layer, as these are both commonly used for classification tasks.
+- The initial goal was to use 2-3x the number of input nodes for the first layer, then reduce the number of nodes for subsequent layers, start with two hidden layers.
+    - Minor improvement in model performance after reducing the number of nodes in hidden layers.
+    - Additional improvement after adding a third hidden layer.
 - Consideration of the NAME column improves model performance to ~79% accuracy with ~46% loss.
 - Minor improvement in model performance after excluding the AFFILIATION column.
 
