@@ -23,7 +23,16 @@ Our goal is to create a deep learning model by identifying key features of the d
 - Considerations:
     - Identification columns (EIN, NAME) are likely unique and therefore should be removed from input data. The NAME information are considered in models 4 and 5 below, as particular groups may be associated with successful outcomes (or not) and is worth assessing its potential contribution to predictive power.
 
-## Model Performance:
+### Compiling, Training, and Evaluating the Model
+
+**See "Model Performance" for model summaries**
+- I used RELU activation functions for the hidden layers and SIGMOID for the output layer.
+- The initial goal was to use 2-3x the number of input nodes for the first layer, then reduce the number of nodes for subsequent layers.
+    - Minor improvement in model performance after reducing the number of nodes in hidden layers, and after adding a third hidden layer.
+- Consideration of the NAME column improves model performance to ~79% accuracy with ~46% loss.
+- Minor improvement in model performance after excluding the AFFILIATION column.
+
+#### Model Performance:
 
 **1. Exclude EIN, NAME; Reduced categories for APPLICATION_TYPE and CLASSIFICATION**
 
