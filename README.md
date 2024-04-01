@@ -7,19 +7,18 @@ Our goal is to create a deep learning model by identifying key features of the d
 ### Data Preprocessing:
 
 - Target: 
-    - IS_SUCCESSFUL: Was the money used effectively
+    -** IS_SUCCESSFUL**: Was the money used effectively
 
 - Features: 
-    - EIN, NAME: Identification columns
-    - APPLICATION_TYPE
-    - CLASSIFICATION: Government organization classification
-    - USE_CASE: Use case for funding
-    - ORGANIZATION
-    - STATUS: Active Status
-    - INCOME_AMT
-    - SPECIAL_CONSIDERATIONS
-    - ASK_AMT
-
+    - **EIN, NAME**: Identification columns
+    - **APPLICATION_TYPE**
+    - **CLASSIFICATION**: Government organization classification
+    - **USE_CASE**: Use case for funding
+    - **ORGANIZATION**
+    - **STATUS**: Active Status
+    - **INCOME_AMT**
+    - **SPECIAL_CONSIDERATIONS**
+    - **ASK_AMT**
 
 
 ## Model Performance:
@@ -29,6 +28,7 @@ Our goal is to create a deep learning model by identifying key features of the d
 Checkpoint file: "AlphabetSoupCharity.h5"
 
 Model: "sequential"
+
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -42,6 +42,7 @@ _________________________________________________________________
 Total params: 5981 (23.36 KB)
 Trainable params: 5981 (23.36 KB)
 Non-trainable params: 0 (0.00 Byte)
+
 _________________________________________________________________
 - Performance over 100 Epochs:
     - loss: 0.5580 
