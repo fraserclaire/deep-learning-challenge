@@ -23,10 +23,10 @@ Our goal is to create a deep learning model by identifying key features of the d
 - Considerations:
     - Identification columns (EIN, NAME) are likely unique and therefore should be removed from input data. The NAME information are considered in models 4 and 5 below, as particular groups may be associated with successful outcomes (or not) and is worth assessing its potential contribution to predictive power.
 
-### Compiling, Training, and Evaluating the Model
+### Compiling, Training, and Evaluating the Model:
 
 **See "Model Performance" for model summaries**
-- I used RELU activation functions for the hidden layers and SIGMOID for the output layer.
+- RELU activation functions used for the hidden layers and SIGMOID for the output layer.
 - The initial goal was to use 2-3x the number of input nodes for the first layer, then reduce the number of nodes for subsequent layers.
     - Minor improvement in model performance after reducing the number of nodes in hidden layers, and after adding a third hidden layer.
 - Consideration of the NAME column improves model performance to ~79% accuracy with ~46% loss.
@@ -169,4 +169,5 @@ _________________________________________________________________
 
 The model performs slightly better after excluding the AFFILIATION column, which likely implies that these data do not inform whether a loan was successful after funding or not.
 
-Similar model generation and testing on all columns may provide insight into which data are likely to inform accurate model predictions.
+### Summary:
+The same process that was done to prepare, generate, and test Model 5 should be conducted on all features to determine which variables are contibuting toward accurate model predictions. The number of categories for these features of interest should then be condensed, as done with the APPLICATION_TYPE and CLASSIFICATION data here, with tests done to determine what thresholds to set for each. Model hyperparameters such as the number of neurons, layers, and activation function type can also be tuned to different settings to optimize performance.
